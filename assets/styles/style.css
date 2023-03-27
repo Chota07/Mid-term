@@ -10,7 +10,7 @@ header{
     align-items: center;
     padding: 42px 140px;
 }
-nav ul{
+.header-nav ul{
     display: flex;
     align-items: center;
     gap: 48px;
@@ -39,40 +39,6 @@ li a:hover{
 .hiding{
     display: none;
 }
-
-/* header media */
-
-@media screen and (min-width: 768px) and (max-width: 1024px){
-    header{
-        padding: 40px 28px 20px;
-    }
-    .header-btn{
-        display: none;
-    }
-    .find-ico{
-        display: block;
-        background-color: #F8F8F8;
-        border-radius: 50%;
-        padding: 14.5px 15.25px 10px 14.5px;
-    }
-}
-@media screen and (min-width: 200px) and (max-width: 768px){
-    header{
-        padding: 40px 28px 20px;
-    }
-    .header-btn{
-        display: none;
-    }
-    nav{
-        display: none;
-    }
-    .find-ico{
-        display: block;
-        background-color: #F8F8F8;
-        border-radius: 50%;
-        padding: 14.5px 15.25px 10px 14.5px;
-    }
-}
 /* header end */
 
 /* main section */
@@ -91,7 +57,7 @@ form{
     border-radius: 24px;
     box-shadow: 0px 4px 25px rgba(194, 194, 194, 0.31);
 }
-h2{
+.main-sec h2{
     font-size: 16px;
     color: #000000;
     margin-bottom: 13px;
@@ -167,7 +133,92 @@ h1{
     max-width: 324px;
     width: 100%;
 }
+/* main section end */
+
+/* second section */
+.trending{
+    width: 100%;
+    padding: 0px 140px;
+    margin-top: 72px;
+    margin-bottom: 120px;
+}
+.trending h2{
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 1);
+}
+.big-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.container{
+    background: #F8F8F8;
+    box-shadow: 0px 4px 18px rgba(194, 194, 194, 0.3);
+    border-radius: 24px;
+    max-width: 395px;
+    width: 100%;
+    height: 424px;
+    padding: 16px;
+}
+.cont-img-span{
+    font-size: 12px;
+    color: #FFFFFF;
+    padding: 6px 11px;
+    background-color: #29B24E;
+    border-radius: 15px;
+}
+.cont-img-ico{
+    position: absolute;
+    bottom: -20px;
+    right: 4px;
+    background-color: #FFFFFF;
+    box-shadow: -2px 4px 20px rgba(109, 109, 109, 0.25);
+    padding: 11px;
+    border-radius: 50%;
+}
+.first{
+    background-image: url(../images/Rectangle\ 541.png);
+}
+.second{
+    background-image: url(../images/Rectangle\ 425.png);
+}
+.third{
+    background-image: url(../images/Rectangle\ 431.png);
+}
+.fourth{
+    background-image: url(../images/Rectangle\ 428.png);
+}
+.box{
+    max-width: 363px;
+    height: 202px;
+    margin: auto;
+    padding-top: 12px;
+    padding-left: 12px;
+    position: relative;
+}
+
+
+/* second section end */
+
+/* media */
 @media screen and (min-width: 768px) and (max-width: 1024px){
+    /* header */
+    header{
+        padding: 40px 28px 20px;
+    }
+    .header-btn{
+        display: none;
+    }
+    .find-ico{
+        display: block;
+        background-color: #F8F8F8;
+        border-radius: 50%;
+        padding: 14.5px 15.25px 10px 14.5px;
+    }
+
+    /* section one*/
     .main-sec{
         display: flex;
         flex-direction: column-reverse;
@@ -194,8 +245,29 @@ h1{
         max-width: 100%;
         width: 100%;
     }
+
+    /* section two */
+
 }
 @media screen and (min-width: 200px) and (max-width: 768px){
+     /* header */
+    header{
+        padding: 40px 28px 20px;
+    }
+    .header-btn{
+        display: none;
+    }
+    .header-nav{
+        display: none;
+    }
+    .find-ico{
+        display: block;
+        background-color: #F8F8F8;
+        border-radius: 50%;
+        padding: 14.5px 15.25px 10px 14.5px;
+    }
+
+    /* section one */
     .main-sec{
         display: flex;
         flex-direction: column-reverse;
@@ -224,5 +296,8 @@ h1{
         max-width: 100%;
         width: 100%;
     }
+
+    /* section two */
+
 }
-/* main section end */
+/* media end */
