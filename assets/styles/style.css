@@ -124,6 +124,9 @@ h1{
     border: none;
     outline: transparent;
 }
+.search-ico:hover{
+    cursor: pointer;
+}
 .searching-side div{
     background-color: #F8F8F8CC;
     border-radius: 10px;
