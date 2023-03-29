@@ -1,14 +1,23 @@
 body{
     font-family: poppins;
+    overflow-x: hidden;
 }
 
 /* header */
 
 header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: 
+    'logo nav btn';
     padding: 42px 140px;
+}
+.header-nav{
+    grid-area: nav;
+    margin: auto;
+}
+header a img{
+    grid-area: logo;
 }
 .header-nav ul{
     display: flex;
@@ -32,6 +41,8 @@ li a:hover{
     font-size: 14px;
     border-radius: 12px;
     border: none;
+    grid-area: btn;
+    margin-left: auto;
 }
 .header-btn:hover{
     box-shadow: 0px 0px 30px #888888;
@@ -243,20 +254,18 @@ h1{
 .internal-sec{
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 44px;
     padding: 0px 140px;
 }
 .internal-sec-img{
-    max-width: 810px;
-    width: 100%;
-    height: 100%;
-    /* border-radius: 20px; */
+    max-width: 1620px;
+    width: 50%;
+    border-radius: 20px;
 }
 .internal-sec-info{
     max-width: 786px;
     width: 100%;
-    max-height: 732px;
-    height: 100%;
     background: #F8F8F8;
     box-shadow: 0px 4px 18px rgba(194, 194, 194, 0.3);
     border-radius: 24px;
@@ -294,7 +303,7 @@ h1{
 .title-info{
     padding: 0px 0px 40px 40px;
 }
-h1{
+.internal-h1{
     margin: 24px 0px 12px 0px;
     font-size: 22px;
     color: #000000;
@@ -334,6 +343,10 @@ h1{
     display: flex;
     flex-direction: column;
 }
+.con-box div{
+    display: flex;
+    flex-direction: column;
+}
 .normal-con{
     color: #000000;
     opacity: 0.6;
@@ -357,6 +370,7 @@ h1{
 .price-box div{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 .price-tag{
     font-size: 36px;
@@ -375,14 +389,16 @@ h1{
     font-size: 14px;
     line-height: 21px;
     background: none;
-    margin-right: 16px;
+}
+.gap{
+    gap: 16px;
 }
 .send-sms:hover{
     cursor: pointer;
-    box-shadow: 0px 0px 30px #888888;
+    box-shadow: 0px 0px 30px #888888a1;
 }
 .call:hover{
-    box-shadow: 0px 0px 30px #888888;
+    box-shadow: 0px 0px 30px #888888a1;
 }
 .call{
     font-size: 14px;
@@ -432,6 +448,9 @@ footer span{
     /* header */
     header{
         padding: 40px 28px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
     .header-btn{
         display: none;
@@ -491,9 +510,22 @@ footer span{
         padding: 0px 20px;
     }
 
+    /* internal page */
+    .internal-sec{
+        flex-wrap: wrap;
+        padding: 0px;
+        padding-top: 20px;
+    }
+    .internal-sec-img{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+
+
     /* footer */
     footer{
-        padding: 40px 20px;
+        padding: 40px 40px;
         margin-bottom: 84px;
     }
     .footer{
@@ -503,27 +535,26 @@ footer span{
         display: none;
     }
     .footer-right{
-        flex-direction: column;
-        align-items: flex-end;
-        gap: 16px;
+        /* flex-direction: column;
+        align-items: flex-end; */
+        gap: 24px;
     }
     .footer-left{
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 16px;
+        /* flex-direction: column;
+        align-items: flex-start; */
+        gap: 24px;
     }
     footer span{
         margin-top: 40px;
     }
-
-
+    
     /* bottom nav */
     .bottom-nav{
         display: flex;
         width: 100%;
         justify-content: space-evenly;
         align-items: center;
-        padding: 0px 15px 15px 15px;
+        padding: 0px 15px 6px 15px;
         background-color: #FFFFFF;
         border-radius: 24px 24px 0px 0px;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
@@ -557,6 +588,9 @@ footer span{
      /* header */
     header{
         padding: 40px 28px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
     .header-btn{
         display: none;
@@ -621,6 +655,87 @@ footer span{
         padding: 0px 20px;
     }
 
+    /* internal page */
+    .internal-sec{
+        flex-wrap: wrap;
+        padding: 0%;
+        padding-top: 20px;
+    }
+    .internal-sec-img{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .internal-sec-top{
+        padding: 10px 20px 0px 20px;
+    }
+    .title-info{
+        padding: 0px 20px 24px 20px;
+    }
+    .title-info p{
+        margin: 0px;
+    }
+    .internal-h1{
+        font-size: 18px;
+    }
+    .title-info span{
+        font-size: 12px;
+    }
+    .title-info p{
+        font-size: 12px;
+    }
+    .rooms{
+        padding: 16px 20px;
+        /* gap: 0px; */
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .conditions{
+        flex-direction: column;
+        padding: 16px 20px;
+    }
+    .con-box div, .mid-box{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .bold-con, .normal-con{
+        margin-bottom: 12px;
+    }
+    .price-box{
+        padding: 16px 20px 45px 20px;
+        flex-direction: column;
+        gap: 40px;
+        align-items: flex-start;
+    }
+    .pricing-box{
+        margin-left: 31px;
+    }
+    .gap{
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+    }
+    .price-tag{
+        font-size: 24px;
+    }
+    .per-month{
+        font-size: 10px;
+    }
+    .call, .send-sms{
+        width: 100%;
+        text-align: center;
+    }
+    .hide{
+        display: none;
+    }
+    .internal-ads{
+        margin-top: 40px;
+    }
+    .trending h2{
+        margin-bottom: 16px;
+    }
+
+
     /* footer */
     footer{
         padding: 40px 20px;
@@ -652,7 +767,7 @@ footer span{
         width: 100%;
         justify-content: space-between;
         align-items: center;
-        padding: 0px 15px 15px 15px;
+        padding: 0px 15px 6px 15px;
         background-color: #FFFFFF;
         border-radius: 24px 24px 0px 0px;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
