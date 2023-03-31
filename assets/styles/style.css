@@ -434,6 +434,9 @@ footer span{
     padding-top: 32px;
     border-top: 1px solid rgba(208, 208, 208, 1);
 }
+footer a:hover{
+    color: #ffffffaa;
+}
 /* footer end */
 /* media */
 @media screen and (min-width: 1024px) and (max-width: 1300px){
