@@ -44,12 +44,13 @@
     <section class="main-sec">
         <form action="#">
             <label for="cities"><h2>Location</h2></label>
-            <select name="cities" id="cities">
-              <option value="All Kenya">All Kenya</option>
-              <option value="Kajiado">Kajiado</option>
-              <option value="Namanga">Namanga</option>
-            </select>
-
+            <div class="dropdown">
+                <select name="cities" id="cities">
+                    <option value="All Kenya">All Kenya</option>
+                    <option value="Kajiado">Kajiado</option>
+                    <option value="Namanga">Namanga</option>
+                  </select>      
+            </div>
             <h2>Property</h2>
             <ul class="property" >
                 <li>
@@ -90,7 +91,7 @@
                 </li>
                 <li>
                     <input type="checkbox" id="short-property" name="short-property" >
-                    <label for="short-property">#Short Let Property
+                    <label for="short-property">Short Let Property
                     <span>| 9548</span></label>    
                 </li>
                 <li>
@@ -146,187 +147,165 @@
     <section class="trending">
         <h2>Trending ads</h2>
         <div class="big-container">
-            <a href="internal.html">
-                <div class="container">
-                    <div class="first box">
-                        <span class="cont-img-span">VIP TOP+</span>
-                        <img class="back-img" src="./assets/images/Rectangle 541.png" alt="renting house view">
-                        <img class="cont-img-ico" src="./assets/icons/Frame1.svg" alt="bookmark saving icon">    
-                    </div>
-                    <div class="info">
-                        <span>200 Acres Parcel for Sale in Namanga</span>
-                        <span class="info-city">Kajiado, Namanga</span>    
-                    </div>
-                    <div class="price">
-                        <span>1450$</span>
-                        <span class="price-range">/ Month</span>
-                    </div>
-                    <div class="more-info">
-                        <span>5 Bedroom</span>
-                        <span>3 bathroom</span>
-                        <span>450 Sq.m.</span>
-                    </div>
-                </div>    
-            </a>
-            <a href="internal.html">
-                <div class="container">
-                    <div class="second box">
-                        <span class="cont-img-span">VIP TOP+</span>
-                        <img class="back-img" src="./assets/images/Rectangle 425.png" alt="renting house view">
-                        <img class="cont-img-ico" src="./assets/icons/Frame1.svg" alt="bookmark saving icon">    
-                    </div>
-                    <div class="info">
-                        <span>200 Acres Parcel for Sale in Namanga</span>
-                        <span class="info-city">Kajiado, Namanga</span>    
-                    </div>
-                    <div class="price">
-                        <span>1450$</span>
-                        <span class="price-range">/ Month</span>
-                    </div>
-                    <div class="more-info">
-                        <span>5 Bedroom</span>
-                        <span>3 bathroom</span>
-                        <span>450 Sq.m.</span>
-                    </div>
+            <a class="container" href="internal.html">
+                <div class="first box">
+                    <span class="cont-img-span">VIP TOP+</span>
+                    <img class="back-img" src="./assets/images/Rectangle 541.png" alt="renting house view">
+                    <img class="cont-img-ico" src="./assets/icons/Frame1.svg" alt="bookmark saving icon">    
                 </div>
-    
-            </a>
-            <a href="internal.html">
-                <div class="container">
-                    <div class="third box">
-                        <span class="cont-img-span">VIP TOP+</span>
-                        <img class="back-img" src="./assets/images/Rectangle 431.png" alt="renting house view">
-                        <img class="cont-img-ico" src="./assets/icons/Frame1.svg" alt="bookmark saving icon">    
-                    </div>
-                    <div class="info">
-                        <span>200 Acres Parcel for Sale in Namanga</span>
-                        <span class="info-city">Kajiado, Namanga</span>    
-                    </div>
-                    <div class="price">
-                        <span>1450$</span>
-                        <span class="price-range">/ Month</span>
-                    </div>
-                    <div class="more-info">
-                        <span>5 Bedroom</span>
-                        <span>3 bathroom</span>
-                        <span>450 Sq.m.</span>
-                    </div>
-                </div>    
-            </a>
-            <a href="internal.html">
-                <div class="container">
-                    <div class="fourth box">
-                        <span class="cont-img-span">VIP TOP+</span>
-                        <img class="back-img" src="./assets/images/Rectangle 541.png" alt="renting house view">
-                        <img class="cont-img-ico" src="./assets/icons/Frame1.svg" alt="bookmark saving icon">    
-                    </div>
-                    <div class="info">
-                        <span>200 Acres Parcel for Sale in Namanga</span>
-                        <span class="info-city">Kajiado, Namanga</span>    
-                    </div>
-                    <div class="price">
-                        <span>1450$</span>
-                        <span class="price-range">/ Month</span>
-                    </div>
-                    <div class="more-info">
-                        <span>5 Bedroom</span>
-                        <span>3 bathroom</span>
-                        <span>450 Sq.m.</span>
-                    </div>
+                <div class="info">
+                    <span>200 Acres Parcel for Sale in Namanga</span>
+                    <span class="info-city">Kajiado, Namanga</span>    
                 </div>
-    
-            </a>
-            <a href="internal.html">
-                <div class="container">
-                    <div class="third box">
-                        <span class="cont-img-span">VIP TOP+</span>
-                        <img class="back-img" src="./assets/images/Rectangle 431.png" alt="renting house view">
-                        <img class="cont-img-ico" src="./assets/icons/Frame1.svg" alt="bookmark saving icon">    
-                    </div>
-                    <div class="info">
-                        <span>200 Acres Parcel for Sale in Namanga</span>
-                        <span class="info-city">Kajiado, Namanga</span>    
-                    </div>
-                    <div class="price">
-                        <span>1450$</span>
-                        <span class="price-range">/ Month</span>
-                    </div>
-                    <div class="more-info">
-                        <span>5 Bedroom</span>
-                        <span>3 bathroom</span>
-                        <span>450 Sq.m.</span>
-                    </div>
+                <div class="price">
+                    <span>1450$</span>
+                    <span class="price-range">/ Month</span>
                 </div>
-    
-            </a>
-            <a href="internal.html">
-                <div class="container">
-                    <div class="second box">
-                        <span class="cont-img-span">VIP TOP+</span>
-                        <img class="back-img" src="./assets/images/Rectangle 425.png" alt="renting house view">
-                        <img class="cont-img-ico" src="./assets/icons/Frame1.svg" alt="bookmark saving icon">    
-                    </div>
-                    <div class="info">
-                        <span>200 Acres Parcel for Sale in Namanga</span>
-                        <span class="info-city">Kajiado, Namanga</span>    
-                    </div>
-                    <div class="price">
-                        <span>1450$</span>
-                        <span class="price-range">/ Month</span>
-                    </div>
-                    <div class="more-info">
-                        <span>5 Bedroom</span>
-                        <span>3 bathroom</span>
-                        <span>450 Sq.m.</span>
-                    </div>
+                <div class="more-info">
+                    <span>5 Bedroom</span>
+                    <span>3 bathroom</span>
+                    <span>450 Sq.m.</span>
                 </div>
-    
             </a>
-            <a href="internal.html">
-                <div class="container">
-                    <div class="third box">
-                        <span class="cont-img-span">VIP TOP+</span>
-                        <img class="back-img" src="./assets/images/Rectangle 431.png" alt="renting house view">
-                        <img class="cont-img-ico" src="./assets/icons/Frame1.svg" alt="bookmark saving icon">    
-                    </div>
-                    <div class="info">
-                        <span>200 Acres Parcel for Sale in Namanga</span>
-                        <span class="info-city">Kajiado, Namanga</span>    
-                    </div>
-                    <div class="price">
-                        <span>1450$</span>
-                        <span class="price-range">/ Month</span>
-                    </div>
-                    <div class="more-info">
-                        <span>5 Bedroom</span>
-                        <span>3 bathroom</span>
-                        <span>450 Sq.m.</span>
-                    </div>
+            <a class="container" href="internal.html">
+                <div class="second box">
+                    <span class="cont-img-span">VIP TOP+</span>
+                    <img class="back-img" src="./assets/images/Rectangle 425.png" alt="renting house view">
+                    <img class="cont-img-ico" src="./assets/icons/Frame1.svg" alt="bookmark saving icon">    
                 </div>
-    
+                <div class="info">
+                    <span>200 Acres Parcel for Sale in Namanga</span>
+                    <span class="info-city">Kajiado, Namanga</span>    
+                </div>
+                <div class="price">
+                    <span>1450$</span>
+                    <span class="price-range">/ Month</span>
+                </div>
+                <div class="more-info">
+                    <span>5 Bedroom</span>
+                    <span>3 bathroom</span>
+                    <span>450 Sq.m.</span>
+                </div>
             </a>
-            <a href="internal.html">
-                <div class="container">
-                    <div class="fourth box">
-                        <span class="cont-img-span">VIP TOP+</span>
-                        <img class="back-img" src="./assets/images/Rectangle 541.png" alt="renting house view">
-                        <img class="cont-img-ico" src="./assets/icons/Frame1.svg" alt="bookmark saving icon">    
-                    </div>
-                    <div class="info">
-                        <span>200 Acres Parcel for Sale in Namanga</span>
-                        <span class="info-city">Kajiado, Namanga</span>    
-                    </div>
-                    <div class="price">
-                        <span>1450$</span>
-                        <span class="price-range">/ Month</span>
-                    </div>
-                    <div class="more-info">
-                        <span>5 Bedroom</span>
-                        <span>3 bathroom</span>
-                        <span>450 Sq.m.</span>
-                    </div>
-                </div>    
-    
+            <a class="container" href="internal.html">
+                <div class="third box">
+                    <span class="cont-img-span">VIP TOP+</span>
+                    <img class="back-img" src="./assets/images/Rectangle 431.png" alt="renting house view">
+                    <img class="cont-img-ico" src="./assets/icons/Frame1.svg" alt="bookmark saving icon">    
+                </div>
+                <div class="info">
+                    <span>200 Acres Parcel for Sale in Namanga</span>
+                    <span class="info-city">Kajiado, Namanga</span>    
+                </div>
+                <div class="price">
+                    <span>1450$</span>
+                    <span class="price-range">/ Month</span>
+                </div>
+                <div class="more-info">
+                    <span>5 Bedroom</span>
+                    <span>3 bathroom</span>
+                    <span>450 Sq.m.</span>
+                </div>
+            </a>
+            <a class="container" href="internal.html">
+                <div class="fourth box">
+                    <span class="cont-img-span">VIP TOP+</span>
+                    <img class="back-img" src="./assets/images/Rectangle 541.png" alt="renting house view">
+                    <img class="cont-img-ico" src="./assets/icons/Frame1.svg" alt="bookmark saving icon">    
+                </div>
+                <div class="info">
+                    <span>200 Acres Parcel for Sale in Namanga</span>
+                    <span class="info-city">Kajiado, Namanga</span>    
+                </div>
+                <div class="price">
+                    <span>1450$</span>
+                    <span class="price-range">/ Month</span>
+                </div>
+                <div class="more-info">
+                    <span>5 Bedroom</span>
+                    <span>3 bathroom</span>
+                    <span>450 Sq.m.</span>
+                </div>
+            </a>
+            <a class="container" href="internal.html">
+                <div class="third box">
+                    <span class="cont-img-span">VIP TOP+</span>
+                    <img class="back-img" src="./assets/images/Rectangle 431.png" alt="renting house view">
+                    <img class="cont-img-ico" src="./assets/icons/Frame1.svg" alt="bookmark saving icon">    
+                </div>
+                <div class="info">
+                    <span>200 Acres Parcel for Sale in Namanga</span>
+                    <span class="info-city">Kajiado, Namanga</span>    
+                </div>
+                <div class="price">
+                    <span>1450$</span>
+                    <span class="price-range">/ Month</span>
+                </div>
+                <div class="more-info">
+                    <span>5 Bedroom</span>
+                    <span>3 bathroom</span>
+                    <span>450 Sq.m.</span>
+                </div>
+            </a>
+            <a class="container" href="internal.html">
+                <div class="second box">
+                    <span class="cont-img-span">VIP TOP+</span>
+                    <img class="back-img" src="./assets/images/Rectangle 425.png" alt="renting house view">
+                    <img class="cont-img-ico" src="./assets/icons/Frame1.svg" alt="bookmark saving icon">    
+                </div>
+                <div class="info">
+                    <span>200 Acres Parcel for Sale in Namanga</span>
+                    <span class="info-city">Kajiado, Namanga</span>    
+                </div>
+                <div class="price">
+                    <span>1450$</span>
+                    <span class="price-range">/ Month</span>
+                </div>
+                <div class="more-info">
+                    <span>5 Bedroom</span>
+                    <span>3 bathroom</span>
+                    <span>450 Sq.m.</span>
+                </div>
+            </a>
+            <a class="container" href="internal.html">
+                <div class="third box">
+                    <span class="cont-img-span">VIP TOP+</span>
+                    <img class="back-img" src="./assets/images/Rectangle 431.png" alt="renting house view">
+                    <img class="cont-img-ico" src="./assets/icons/Frame1.svg" alt="bookmark saving icon">    
+                </div>
+                <div class="info">
+                    <span>200 Acres Parcel for Sale in Namanga</span>
+                    <span class="info-city">Kajiado, Namanga</span>    
+                </div>
+                <div class="price">
+                    <span>1450$</span>
+                    <span class="price-range">/ Month</span>
+                </div>
+                <div class="more-info">
+                    <span>5 Bedroom</span>
+                    <span>3 bathroom</span>
+                    <span>450 Sq.m.</span>
+                </div>
+            </a>
+            <a class="container" href="internal.html">
+                <div class="fourth box">
+                    <span class="cont-img-span">VIP TOP+</span>
+                    <img class="back-img" src="./assets/images/Rectangle 541.png" alt="renting house view">
+                    <img class="cont-img-ico" src="./assets/icons/Frame1.svg" alt="bookmark saving icon">    
+                </div>
+                <div class="info">
+                    <span>200 Acres Parcel for Sale in Namanga</span>
+                    <span class="info-city">Kajiado, Namanga</span>    
+                </div>
+                <div class="price">
+                    <span>1450$</span>
+                    <span class="price-range">/ Month</span>
+                </div>
+                <div class="more-info">
+                    <span>5 Bedroom</span>
+                    <span>3 bathroom</span>
+                    <span>450 Sq.m.</span>
+                </div>
             </a>
         </div>
     </section>
