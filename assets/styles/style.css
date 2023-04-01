@@ -520,6 +520,9 @@ footer a:hover{
     }
     /* internal page */
     .internal-sec{
+        flex-wrap: wrap;
+    }
+    .internal-sec{
         padding: 0px;
         padding-top: 20px;
     }
@@ -655,6 +658,7 @@ footer a:hover{
     .internal-sec{
         padding: 0%;
         padding-top: 20px;
+        flex-wrap: wrap;
     }
     .internal-sec-img{
         margin-left: 20px;
