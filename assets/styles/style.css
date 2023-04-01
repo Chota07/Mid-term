@@ -251,11 +251,16 @@ h1{
     align-items: center;
     gap: 44px;
     padding: 0px 140px;
-    flex-wrap: wrap;
 }
 .internal-sec-img{
     max-width: 810px;
+    width: 100%;
     max-height: 732px;
+    height: 100%;
+    border-radius: 20px;
+}
+.internal-sec-img img{
+    width: 100%;
     border-radius: 20px;
 }
 .internal-sec-info{
@@ -440,6 +445,9 @@ footer a:hover{
 /* footer end */
 /* media */
 @media screen and (min-width: 1024px) and (max-width: 1300px){
+    .internal-sec{
+        flex-wrap: wrap;
+    }
     .footer-left, .footer-right{
         gap: 24px;
     }
@@ -531,13 +539,9 @@ footer a:hover{
         display: none;
     }
     .footer-right{
-        /* flex-direction: column;
-        align-items: flex-end; */
         gap: 24px;
     }
     .footer-left{
-        /* flex-direction: column;
-        align-items: flex-start; */
         gap: 24px;
     }
     footer span{
